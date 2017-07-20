@@ -5,7 +5,7 @@
 // Login   <louis.jurczyk@epitech.eu>
 // 
 // Started on  Mon Apr 24 09:30:18 2017 jurczy_l
-// Last update Fri Apr 28 14:03:18 2017 jurczy_l
+// Last update Thu Jul 20 15:01:46 2017 louis
 //
 
 #include	"NamedPipe.hpp"
@@ -21,7 +21,7 @@ NamedPipe::NamedPipe(int proc_id, int id)
     _stream << "/tmp/plazza_thread_out" << proc_id << id;
   _out_str = _stream.str();
   if (mkfifo(_out_str.c_str(), 0666) != 0)
-    exit (96);
+    exit (97);
   _out.open(_out_str.c_str(), std::ostream::out | std::ios::in);
 }
 
