@@ -6,6 +6,5 @@ themselves with several threads, themselves looking for mails inside several fil
 
 
 
-This is an overview of the expected architecture:
-
+This is an overview of the architecture:
 ![alt text](https://github.com/jurelou/plazza/blob/master/img/plazza_en-000.png "Logo Title Text 1")
